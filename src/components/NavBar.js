@@ -5,7 +5,7 @@ import loginImg from '../image/sign.svg'
 
 const NavBarStyled = styled.header`
     position: fixed;
-    tor: 0;
+    top: 0;
     left: 0;
     z-index: 999;
     height: 80px;
