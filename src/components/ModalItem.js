@@ -32,7 +32,6 @@ const Banner = styled.div`
     margin-bottom: 20px;
 `;
 
-
 export const ModalItem = ({ openItem, setOpenItem }) => {
 
     function closeModal(e) {
