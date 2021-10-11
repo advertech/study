@@ -18,14 +18,16 @@ const SectionMenu = styled.section`
 
 
 export const Menu = ({ setOpenItem }) => (
+
     <MenuStyled>
         <Banner />
         <SectionMenu>
-            <h2> Burg ers</h2>
+            <h2> Burgers</h2>
             <ListItem
                 itemList={dbMenu.burger}
                 setOpenItem={setOpenItem}
             />
+
         </SectionMenu>
         <SectionMenu>
             <h2> Закуски и напитки</h2>

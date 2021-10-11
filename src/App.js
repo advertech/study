@@ -9,14 +9,15 @@ import { ModalItem } from './components/ModalItem';
 function App() {
 
   const [openItem, setOpenItem] = React.useState(null);
-  console.log(openItem)
+
+  console.log('item: ', openItem)
 
   return (
     <>
       <GlobalStyle />
       <NavBar />
       <Menu setOpenItem={setOpenItem} />
-      <ModalItem opemItem={openItem} setOpenItem={setOpenItem} />
+      <ModalItem openItem={openItem} setOpenItem={setOpenItem} />
     </>
   );
 }

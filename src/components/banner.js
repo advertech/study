@@ -10,5 +10,4 @@ background-size: cover;
 background-position: center;
 background-color: red;
 
-
 `
