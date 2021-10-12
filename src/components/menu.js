@@ -9,6 +9,7 @@ import { Banner } from './banner';
 
 const MenuStyled = styled.main`  
     margin-top: 80px;
+    margin-left: 380px;
 `;
 
 const SectionMenu = styled.section`

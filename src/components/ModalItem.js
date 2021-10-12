@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { AddButton } from './add-button';
+import { ButtonCheckout } from './ButtonCheckout';
 
 const Overlay = styled.div`
 position:fixed;
@@ -70,7 +70,7 @@ export const ModalItem = ({ openItem, setOpenItem }) => {
                         <div> {openItem.name} </div>
                         <div>{openItem.price.toLocaleString('ru-RU', { style: 'currency', currency: 'Rub' })}</div>
                     </HeaderContent>
-                    <AddButton>добавить</AddButton>
+                    <ButtonCheckout>добавить</ButtonCheckout>
                 </Content>
 
 
@@ -80,4 +80,3 @@ export const ModalItem = ({ openItem, setOpenItem }) => {
 
 
 }
-//
