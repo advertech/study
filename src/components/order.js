@@ -40,7 +40,23 @@ const Total = styled.div`
 
 
 export const Order = () => {
-    reqrr; krvm 
-    
+    return (
+        <OrderStyled>
+            <OrderTitle> Your Order</OrderTitle>
+            <OrderContent>
+                <OrderList>
+                    <OrderListItem />
+                    <OrderListItem />
+                    <OrderListItem />
+                    <OrderListItem />
+                </OrderList>
+            </OrderContent>
+            <Total>
+                <span>итого</span>
+                <span>6</span>
+                <span>850</span>
+            </Total>
+            <ButtonCheckout>Plase an Order</ButtonCheckout>
+        </OrderStyled>
     )
 }
