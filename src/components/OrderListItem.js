@@ -33,7 +33,7 @@ const TrashButton = styled.button`
 
 `;
 
-export const OrderListItem = ({ ...order }) => (
+export const OrderListItem = ({ order }) => (
     <OrderItemStyled>
         <ItemName>{order.name}</ItemName>
         <ItemQty>1 </ItemQty>

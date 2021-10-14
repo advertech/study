@@ -60,11 +60,13 @@ export const ModalItem = ({ openItem, setOpenItem, orders, setOrders }) => {
     }
     const order = {
         ...openItem
+
     };
 
     const addToOrder = () => {
         setOrders([...orders, order])
         setOpenItem(null);
+        console.log('Передаем в заказ: ', openItem)
     }
 
     return (
