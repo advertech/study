@@ -35,21 +35,24 @@ const Total = styled.div`
     & span:first-child {
         flex-grow: 1;
     }
+ 
+`;
 
+const EmptyList = styled.p`
+    text-align: center;
 `;
 
 
-export const Order = () => {
+export const Order = ({ orders }) => {
     return (
         <OrderStyled>
             <OrderTitle> Your Order</OrderTitle>
             <OrderContent>
-                <OrderList>
-                    <OrderListItem />
-                    <OrderListItem />
-                    <OrderListItem />
-                    <OrderListItem />
-                </OrderList>
+                {orders.length ?
+                    <OrderList>
+                        {orders.map(order => <OrderListItem order={order} />)}
+                    </OrderList> :
+                    <EmptyList>List is Empty</EmptyList>}
             </OrderContent>
             <Total>
                 <span>итого</span>

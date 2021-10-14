@@ -49,16 +49,23 @@ const HeaderContent = styled.div`
     font-family: 'pacifico', cursive;
 `;
 
-export const ModalItem = ({ openItem, setOpenItem }) => {
+export const ModalItem = ({ openItem, setOpenItem, orders, setOrders }) => {
 
     console.log(openItem)
 
-    function closeModal(e) {
+    const closeModal = e => {
         if (e.target.id === 'overlay') {
             setOpenItem(null);
         }
     }
+    const order = {
+        ...openItem
+    };
 
+    const addToOrder = () => {
+        setOrders([...orders, order])
+        setOpenItem(null);
+    }
 
     return (
         <Overlay id="overlay" onClick={closeModal} >
@@ -70,7 +77,7 @@ export const ModalItem = ({ openItem, setOpenItem }) => {
                         <div> {openItem.name} </div>
                         <div>{openItem.price.toLocaleString('ru-RU', { style: 'currency', currency: 'Rub' })}</div>
                     </HeaderContent>
-                    <ButtonCheckout>добавить</ButtonCheckout>
+                    <ButtonCheckout onClick={addToOrder} >добавить</ButtonCheckout>
                 </Content>
 
 
