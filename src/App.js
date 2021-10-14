@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { NavBar } from './components/NavBar';
-import { Menu } from './components/menu';
-import { GlobalStyle } from './components/GlobalStyle';
-import { ModalItem } from './components/ModalItem';
-import { Order } from './components/order';
+import { NavBar } from './components/NavBar/NavBar';
+import { Menu } from './components/Menu/menu';
+import { GlobalStyle } from './components/Style/GlobalStyle';
+import { ModalItem } from './components/Modal/ModalItem';
+import { Order } from './components/Order/order';
 import { useOpenItem } from './components/hooks/useOpenItem';
 import { useOrders } from './components/hooks/useOrders';
 function App() {
